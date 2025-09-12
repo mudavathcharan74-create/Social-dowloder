@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Thumbnail Downloader - MultiTools</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div id="header"></div>
+    
+    <main class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="tool-container">
+                    <h1 class="text-center mb-4">YouTube Thumbnail Downloader</h1>
+                    <p class="text-center">Download high-quality thumbnails from any YouTube video</p>
+                    
+                    <div class="mb-4">
+                        <label for="youtubeUrl" class="form-label">YouTube Video URL</label>
+                        <input type="url" class="form-control" id="youtubeUrl" placeholder="https://www.youtube.com/watch?v=..." required>
+                    </div>
+                    
+                    <div class="text-center">
+                        <button class="btn btn-primary btn-lg" onclick="getThumbnails()">Get Thumbnails</button>
+                    </div>
+                    
+                    <div class="loading mt-4" id="loading">
+                        <div class="spinner-border text-primary" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                        <p class="mt-2">Processing your request...</p>
+                    </div>
+                    
+                    <div class="result-container mt-4" id="resultContainer">
+                        <h3>Available Thumbnails</h3>
+                        <div class="row" id="thumbnailsList">
+                            <!-- Thumbnails will be inserted here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Ad Space -->
+        <div class="row my-5 justify-content-center">
+            <div class="col-12 text-center">
+                <div class="ad-space">Advertisement</div>
+            </div>
+        </div>
+    </main>
+    
+    <div id="footer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/tools/youtube-thumbnail.js"></script>
+</body>
+</html>
