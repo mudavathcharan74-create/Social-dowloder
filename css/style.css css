@@ -1,0 +1,75 @@
+:root {
+    --primary-color: #4e73df;
+    --secondary-color: #6f42c1;
+    --light-bg: #f8f9fc;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--light-bg);
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    color: var(--primary-color);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.ad-space {
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.tool-card {
+    height: 100%;
+}
+
+.tool-icon {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+/* Tool specific styles */
+.tool-container {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+}
+
+.result-container {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+.loading {
+    display: none;
+    text-align: center;
+    padding: 20px;
+}
